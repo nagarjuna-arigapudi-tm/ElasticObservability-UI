@@ -22,15 +22,20 @@ React-based dashboard for visualizing Elasticsearch cluster metrics and monitori
 
 ## Prerequisites
 
-- Node.js 16+ and npm
+- **Node.js 18.x - 22.x** (tested with 22.18.0) and npm 9+
 - ElasticObservability backend running on `http://localhost:9092`
 
 ## Installation
 
 ```bash
+# Verify Node.js version
+node --version  # Should be 18.x - 22.x
+
 # Install dependencies
 npm install
 ```
+
+**Note:** The project uses ESM modules (`"type": "module"`) and is fully compatible with Node.js 22.18.0.
 
 ## Running the Application
 
