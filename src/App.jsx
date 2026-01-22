@@ -11,6 +11,7 @@ import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
 import IndexingRateView from './pages/IndexingRateView';
 import TPWQueueView from './pages/TPWQueueView';
+import BulkTasksView from './pages/BulkTasksView';
 import StaleIndicesView from './pages/StaleIndicesView';
 import ClustersView from './pages/ClustersView';
 import JobsView from './pages/JobsView';
@@ -58,6 +59,7 @@ function App() {
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/indexing-rate" element={<IndexingRateView />} />
                   <Route path="/tpwqueue" element={<TPWQueueView />} />
+                  <Route path="/bulk-tasks" element={<BulkTasksView />} />
                   <Route path="/stale-indices" element={<StaleIndicesView />} />
                   <Route path="/clusters" element={<ClustersView />} />
                   <Route path="/jobs" element={<JobsView />} />

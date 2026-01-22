@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import QueueIcon from '@mui/icons-material/Queue';
+import SpeedIcon from '@mui/icons-material/Speed';
 import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
 import StorageIcon from '@mui/icons-material/Storage';
 import WorkIcon from '@mui/icons-material/Work';
@@ -18,6 +19,7 @@ const menuItems = [
   { path: '/dashboard', label: 'Dashboard', icon: <DashboardIcon /> },
   { path: '/indexing-rate', label: 'Indexing Rate', icon: <TrendingUpIcon /> },
   { path: '/tpwqueue', label: 'Thread Pool Queue', icon: <QueueIcon /> },
+  { path: '/bulk-tasks', label: 'Bulk Write Tasks', icon: <SpeedIcon /> },
   { path: '/stale-indices', label: 'Stale Indices', icon: <DeleteSweepIcon /> },
   { path: '/clusters', label: 'Clusters', icon: <StorageIcon /> },
   { path: '/jobs', label: 'Jobs', icon: <WorkIcon /> },

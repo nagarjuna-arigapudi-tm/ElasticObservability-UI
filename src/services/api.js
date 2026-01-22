@@ -71,4 +71,20 @@ export const triggerJob = async (jobName) => {
   return response.data;
 };
 
+// Bulk Write Tasks Monitoring APIs
+export const getBulkTasksClusters = async () => {
+  const response = await apiClient.get('/bulkTasks/clusters');
+  return response.data;
+};
+
+export const getBulkTasksHistory = async (clusterName) => {
+  const response = await apiClient.get(`/bulkTasks/${clusterName}`);
+  return response.data;
+};
+
+export const getBulkTasksLatest = async (clusterName) => {
+  const response = await apiClient.get(`/bulkTasks/${clusterName}/latest`);
+  return response.data;
+};
+
 export default apiClient;
