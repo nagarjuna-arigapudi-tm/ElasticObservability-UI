@@ -21,10 +21,14 @@ export default function Dashboard() {
           getJobs(),
         ]);
         setStatus(statusData);
-        setClusters(clustersData.clusters || []);
-        setJobs(jobsData.jobs || []);
+        setClusters(Array.isArray(clustersData?.clusters) ? clustersData.clusters : []);
+        setJobs(Array.isArray(jobsData?.jobs) ? jobsData.jobs : []);
       } catch (error) {
         console.error('Error fetching dashboard data:', error);
+        // Ensure state is properly set even on error
+        setStatus(null);
+        setClusters([]);
+        setJobs([]);
       } finally {
         setLoading(false);
       }
